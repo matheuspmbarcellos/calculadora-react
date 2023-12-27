@@ -1,7 +1,13 @@
+import { Container, Content } from "./styles";
 
-function App() {
+const App = () => {
+  
   return (
-    <h1>calculadora-react</h1>
+    <Container>
+      <Content>
+        calculadora-react
+      </Content>
+    </Container>
   );
 }
 
