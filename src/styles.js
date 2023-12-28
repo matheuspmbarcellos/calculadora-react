@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
     width: 100%;
     height: 100vh;
-    background-color: #CACACA;
+    background-color: #B6B6B6;
 
     display: flex;
     align-items: center;
@@ -11,7 +11,17 @@ export const Container = styled.div`
 `
 
 export const Content = styled.div`
-    width: 80%;
+    width: 70%;
     min-height: 350px;
-    background-color: #fafafa;
+    padding: 7px;
+    background-color: #eaa29a;
+    border-radius: 10px;
+    border: 2px solid #341009;
+`
+
+export const Row = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 `
