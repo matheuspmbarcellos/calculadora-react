@@ -35,12 +35,13 @@ const App = () => {
 
     if(firstNumber === "0"){
       setFirstNumber(String(currentNumber))
-      setCurrentNumber("0")
+      handleCurrentNumberClear()
       setOperation("+")
     } else {
         const sum = Number(firstNumber) + Number(currentNumber)
         setResult(String(sum))
         setFirstNumber(String(sum))
+        handleCurrentNumberClear()
         setOperation("+")
     }
 
@@ -49,13 +50,13 @@ const App = () => {
   const handleAddSubtraction = () => {    
     if(firstNumber === "0"){
       setFirstNumber(String(currentNumber))
-      setCurrentNumber("0")
+      handleCurrentNumberClear()
       setOperation("-")
     } else {
         const sub = Number(firstNumber) - Number(currentNumber)
         setResult(String(sub))
         setFirstNumber(String(sub))
-        setCurrentNumber("0")
+        handleCurrentNumberClear()
         setOperation("-")
     }    
   }
@@ -63,13 +64,13 @@ const App = () => {
   const handleAddMultiplication = () => {
     if(firstNumber === "0"){
       setFirstNumber(String(currentNumber))
-      setCurrentNumber("0")
+      handleCurrentNumberClear()
       setOperation("*")
     } else {
         const multiplication = Number(firstNumber) * Number(currentNumber)
         setResult(String(multiplication))
         setFirstNumber(String(multiplication))
-        setCurrentNumber("0")
+        handleCurrentNumberClear()
         setOperation("*")
     }
   }
@@ -77,13 +78,13 @@ const App = () => {
   const handleAddDivision = () => {
     if(firstNumber === "0"){
       setFirstNumber(String(currentNumber))
-      setCurrentNumber("0")
+      handleCurrentNumberClear()
       setOperation("/")
     } else {
         const division = Number(firstNumber) / Number(currentNumber)
         setResult(String(division))
         setFirstNumber(String(division))
-        setCurrentNumber("0")
+        handleCurrentNumberClear()
         setOperation("/")
     }
   }
